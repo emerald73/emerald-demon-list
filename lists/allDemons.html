@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel=stylesheet href="../css/mainPage.css">
+    <link rel=stylesheet href="../css/allDemons.css">
     <title>
       All Demons - emerald's Demon List
     </title>
@@ -26,8 +27,90 @@
           Favorites
         </div>
 
+    </div>
 
+    <div class="levelContainer">
+      <div class="sectionTitle">
+        All Completed Extremes
+      </div>
+
+      <div class="levelScroller">
+        <div class="level level1">Acu
+          <div class="thumb">
+            <img src="../images/acu.png">
+          </div>
+          <div class="info">
+
+          </div>
+        </div>
+        <div class="level level2">Thanatophobia
+          <div class="thumb">
+            <img src="../images/thana.png">
+          </div>
+          <div class="info">
+
+          </div>
+        </div>
+        <div class="level">Cataclysm</div>
+        <div class="level">Allegiance</div>
+        <div class="level">HyperSonic</div>
+        <div class="level">Precipitance</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+        <div class="level">Penombre</div>
+      </div>
+
+      <div class="arrows">
+        amoug
+      </div>
 
     </div>
+
+  </div>
+
+  <script>
+    const slider = document.querySelector('.levelScroller');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+      console.log(walk);
+    });
+  </script>
+
+  
+  
   </body>
 </html>

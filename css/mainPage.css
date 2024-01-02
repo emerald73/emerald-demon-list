@@ -1,0 +1,97 @@
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleBar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.title {
+  flex: 3;
+  font-size: 50px;
+  font-family: roboto;
+  font-weight: bold;
+  margin: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 16px;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+.allDemons {
+  flex: 1;
+  margin: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: roboto;
+  font-size: 30px;
+  border-radius: 16px;
+  align-self: center;
+}
+
+.allDemons:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.allDemons:active {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.hardestDemons {
+  flex: 1;
+  margin: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: roboto;
+  font-size: 30px;
+  border-radius: 16px;
+  align-self: center;
+}
+
+.hardestDemons:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.hardestDemons:active {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.favoriteDemons {
+  flex: 1;
+  margin: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: roboto;
+  font-size: 30px;
+  border-radius: 16px;
+  align-self: center;
+}
+
+.favoriteDemons:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.favoriteDemons:active {
+  background-color: rgb(0, 0, 0, 0.2);
+}

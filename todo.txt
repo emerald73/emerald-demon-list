@@ -1,0 +1,11 @@
+finish main page
+- description
+- socials
+
+finish setting up allDemons
+-add images and levels
+-figure out info
+-maybe add another grid element for video
+-maybe figure out wrap around scroll
+
+copy over allDemons template and setup favorites and top50

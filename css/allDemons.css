@@ -54,6 +54,24 @@
     margin: 10px;
     border-radius: 16px;
   }
+
+  .vidButton {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-self: center;
+    padding: 26px;
+  }
+
+  .vidButton:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0.9);
+  }
+
+  .vidButton:active {
+    background-color: rgb(0, 0, 0, 0.8);
+  }
+
 }
 
 

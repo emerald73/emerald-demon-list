@@ -95,3 +95,28 @@ p {
 .favoriteDemons:active {
   background-color: rgb(0, 0, 0, 0.2);
 }
+
+.contactBar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.social {
+  flex: 1;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 16px;
+  align-self: center;
+  text-align: center;
+}
+
+.social:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.social:active {
+  background-color: rgb(0, 0, 0, 0.2);
+}

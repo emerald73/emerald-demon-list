@@ -41,6 +41,7 @@ p {
   font-size: 30px;
   border-radius: 16px;
   align-self: center;
+  text-align: center;
 }
 
 .allDemons:hover {
@@ -63,6 +64,7 @@ p {
   font-size: 30px;
   border-radius: 16px;
   align-self: center;
+  text-align: center;
 }
 
 .hardestDemons:hover {
@@ -85,6 +87,7 @@ p {
   font-size: 30px;
   border-radius: 16px;
   align-self: center;
+  text-align: center;
 }
 
 .favoriteDemons:hover {

@@ -83,3 +83,44 @@
 .arrows {
   flex: 1;
 }
+
+.infoDropdown {
+  margin-top: 10px;
+  padding: 20px;
+  padding-bottom: 0px;
+  align-self: center;
+  border-radius: 16px;
+}
+
+.infoDropdown:hover{
+  background-color: rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.infoDropdown:active {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-top: 35px;
+}
+
+.field {
+  flex: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(0, 0, 0, 0.85);
+}
+
+.field.id:hover {
+  cursor: pointer;
+}
+
+.field.info {
+  color: rgb(0, 0, 0, 1);
+  font-size: 30px;
+}

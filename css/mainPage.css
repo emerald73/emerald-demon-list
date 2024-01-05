@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .titleBar {
   display: flex;
   flex-direction: row;

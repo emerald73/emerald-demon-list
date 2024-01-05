@@ -35,7 +35,7 @@
         All Completed Extremes
       </div>
 
-      <div class="levelScroller">
+      <div class="levelScroller" id="scroller">
         <div class="level level1">Acu
           <div class="thumb">
             <img src="../images/acu.png">
@@ -1875,7 +1875,25 @@
       </div>
 
       <div class="arrows">
-        button scrolling coming soon™
+        <div class="buttons scrollLeft" id="left">
+          <img src="../images/logos/leftArrow.png">
+        </div>
+        <div class="buttons scrollRight" id="right">
+          <img src="../images/logos/rightArrow.png">
+        </div>
+
+        <script>
+          const buttonLeft = document.getElementById('left');
+          const buttonRight = document.getElementById('right');
+
+          buttonLeft.onclick = function() {
+            document.getElementById('scroller').scrollLeft -= 999999;
+            console.log('mog');
+          }
+          buttonRight.onclick = function() {
+            document.getElementById('scroller').scrollLeft += 999999;
+          }
+        </script>
       </div>
 
     </div>

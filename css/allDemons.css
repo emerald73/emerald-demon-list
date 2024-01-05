@@ -82,6 +82,26 @@
 
 .arrows {
   flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.buttons {
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 64px;
+}
+
+.buttons:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.buttons:active {
+  background-color: rgb(0, 0, 0, 0.2);
 }
 
 .infoDropdown {

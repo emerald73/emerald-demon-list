@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet href="../css/mainPage.css">
+    <link rel=stylesheet href="../css/lists.css">
+    <link rel="icon" type="image/x-icon" href="../images/logos/icon.png">
+    <title>
+      All Demons - emerald's Demon List
+    </title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="titleBar">
+
+        <div class="title" onclick="window.open('../index.html', '_self')">
+          emerald's Demon List
+        </div>
+  
+        <div class="allDemons">
+          All Demons
+        </div>
+  
+        <div class="hardestDemons" onclick="window.open('./topDemons.html', '_self')">
+          Top 25
+        </div>
+  
+        <div class="favoriteDemons" onclick="window.open('./favoriteDemons.html', '_self')">
+          Favorites
+        </div>
+
+    </div>
+
+    <div class="levelContainer">
+      <div class="sectionTitle">
+        Unfinished Extremes
+      </div>
+
+      <div class="levelScroller" id="scroller">
+
+        <div class="level level1"><a class="levelTitle">Artificial Ascent</a>
+          <div class="thumb">
+            <img src="../images/acu.png">
+          </div>
+            
+          <div class="infoBox">
+            <div class="field info">
+              Level Info:<br>
+            </div>
+            <div class="field id" onclick="window.open('https://gdbrowser.com/27122654')">
+              ID:<br>27122654
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="arrows">
+        <div class="buttons scrollLeft" id="left">
+          <img src="../images/logos/leftArrow.png">
+        </div>
+        <div class="buttons scrollRight" id="right">
+          <img src="../images/logos/rightArrow.png">
+        </div>
+
+        <script>
+          const buttonLeft = document.getElementById('left');
+          const buttonRight = document.getElementById('right');
+
+          buttonLeft.onclick = function() {
+            document.getElementById('scroller').scrollLeft -= 999999;
+            console.log('mog');
+          }
+          buttonRight.onclick = function() {
+            document.getElementById('scroller').scrollLeft += 999999;
+          }
+        </script>
+      </div>
+
+      <div class="unfinished" onclick="window.open('../lists/allDemons.html', '_self')">
+        Completed Demons
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="contactBar">
+
+    <div class="social youtube" onclick="window.open('https://www.youtube.com/@gdemerald')">
+      <img src="../images/logos/yt.png">
+    </div>
+
+    <div class="social twitch" onclick="window.open('https://twitch.tv/zemerald_')">
+      <img src="../images/logos/twitch.png">
+    </div>
+
+    <div class="social discord" onclick="window.open('https://discordlookup.com/user/534465758839701504')">
+      <img src="../images/logos/discord.png">
+    </div>
+
+    <div class="social github" onclick="window.open('https://github.com/emerald73')">
+      <img src="../images/logos/github.png">
+    </div>
+
+    <div class="social gd" onclick="window.open('https://gdbrowser.com/u/gdemerald')">
+      <img src="../images/logos/gd.png">
+    </div>
+      
+    <div class="social steam" onclick="window.open('https://steamcommunity.com/id/gdemerald/')">
+      <img src="../images/logos/steam.png">
+    </div>
+
+    <div class="social lastfm" onclick="window.open('https://last.fm/user/emerald73')">
+      <img src="../images/logos/lastfm.png">
+    </div>
+
+  </div>
+
+  <div class="inspirational">
+    Inspired by <a href="https://aeonsdemonlist.com" target="_blank">Aeon's Demon List</a>
+  </div>
+  
+  <script>
+    const slider = document.querySelector('.levelScroller');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+      console.log(walk);
+    });
+  </script>
+  
+  </body>
+</html>

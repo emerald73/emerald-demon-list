@@ -96,7 +96,7 @@
   padding: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  border-radius: 64px;
+  border-radius: 80px;
 }
 
 .buttons:hover {
@@ -105,6 +105,29 @@
 }
 
 .buttons:active {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.unfinished {
+  flex: 1;
+  margin: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: roboto;
+  font-size: 30px;
+  border-radius: 16px;
+  align-self: center;
+  text-align: center;
+}
+
+.unfinished:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.unfinished:active {
   background-color: rgb(0, 0, 0, 0.2);
 }
 

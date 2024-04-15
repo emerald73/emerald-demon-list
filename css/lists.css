@@ -76,6 +76,14 @@
     background-color: rgb(0, 0, 0, 0.8);
   }
 
+  .statusBox {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-self: center;
+    padding: 26px;
+  }
+
 }
 
 
